@@ -103,7 +103,7 @@ void TFT::pixel (int x, int y, int color) {
 void TFT::fill (int color) {
     for (int y = 0; y < HEIGHT; ++y)
         for (int x = 0; x < WIDTH; ++x){
-            this.pixel(x,y,color);
+            pixel(x,y,color);
         }
 }
 
