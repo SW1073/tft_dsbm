@@ -26,8 +26,8 @@ int main () {
 	//Inicialitzem la llibreria pigpio
 	init_gpio();
 	//Inicialitzem TFT
-	TFT tft(DC,RES);
-	tft.init(SPI00,1000000,HEIGHT,WIDTH);
+	TFT tft(DC,RES,HEIGHT,WIDTH);
+	tft.init(SPI00,1000000);
 	// omple la pantalla de blanc
 	tft.fill(0xFFFF);
 	// dibuixa una V
