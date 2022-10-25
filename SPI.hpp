@@ -13,7 +13,7 @@ class SPI {
         unsigned int baud;
         unsigned int spi_chan;
         unsigned int spi_flags;
-        
+
     public:
         SPI();
         SPI(unsigned int spi_chan, unsigned int baud);
@@ -23,7 +23,7 @@ class SPI {
         void init ();
 
         /* tanca la connexió SPI
-        */
+         */
         void terminate();
 
         /* escriu 1 byte per la connexió previament inicialitzada
